@@ -1,36 +1,135 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f0f0f;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  padding: 20px;
+/* BASE */
+body {
+  font-family: "Georgia", serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* COLORS */
+:root {
+  --rivon-red: #e50914;
+  --dark-bg: #0f0f0f;
+  --dark-card: #1c1c1c;
+  --gray-text: #b3b3b3;
+}
+
+/* HEADER */
+.header {
+  background-color: var(--rivon-red);
   text-align: center;
-  background: #e50914; /* Rivon Red */
+  padding: 30px 20px;
 }
 
-nav {
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* NAV */
+.nav {
+  background-color: #000;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 10px;
-  background: #1c1c1c;
+  gap: 25px;
+  padding: 15px;
 }
 
-nav a {
+.nav a {
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 
-main {
-  padding: 20px;
+.nav a:hover {
+  color: var(--rivon-red);
 }
 
+/* SECTIONS */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.section h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.section p {
+  color: var(--gray-text);
+  margin-top: 10px;
+}
+
+/* CONTENT BOX */
+.content-box {
+  background-color: var(--dark-card);
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+/* AD BOX */
 .ad-box {
-  margin: 20px 0;
-  padding: 20px;
-  background: #1c1c1c;
+  margin-top: 30px;
+  padding: 40px;
+  background-color: #222;
   text-align: center;
+  color: #aaa;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* CONTACT */
+.email {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #777;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* SMALL TEXT */
+.small {
+  font-size: 14px;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
 }
